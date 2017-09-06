@@ -1,0 +1,9 @@
+sync
+
+git help <verb>
+git config --help
+
+VI 
+vi ESC q! 
+ctr ZZ
+fg
