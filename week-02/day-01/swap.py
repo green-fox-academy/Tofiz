@@ -7,3 +7,5 @@ b = 526
 
 print(a)
 print(b)
+
+print("The number " + str(a) +" and the number " + str(b) + " swap is " + str(a+b))
