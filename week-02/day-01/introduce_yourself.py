@@ -8,3 +8,6 @@
 #  John Doe
 #  31
 #  1.87
+print("Kristof Zagon")
+print(27)
+print(1.8)
