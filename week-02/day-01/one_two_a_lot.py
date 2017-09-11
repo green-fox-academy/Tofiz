@@ -3,3 +3,14 @@
 # If the number is one it should print: One
 # If the number is two it should print: Two
 # If the number is more than two it should print: A lot
+
+number = input( "Gimme a number: ")
+
+if int(number) <= 0:
+    print("Not enough")
+if int(number)==1:
+    print("One")
+if int(number)==2:
+    print("Two")
+if int(number)>2:
+    print("A lot")
