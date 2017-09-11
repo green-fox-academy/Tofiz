@@ -1,11 +1,10 @@
 a = 123
 b = 526
-#Swap the values of the wariables
-    
 
+# create a temporary variable and swap the values
+temp = a
+a = b
+b = temp
 
-
-print(a)
-print(b)
-
-print("The number " + str(a) +" and the number " + str(b) + " swap is " + str(a+b))
+print('The value of a after swapping: {}'.format(a))
+print('The value of b after swapping: {}'.format(b))
