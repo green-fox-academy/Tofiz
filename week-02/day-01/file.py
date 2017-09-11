@@ -1,11 +1,21 @@
-student_count = 100
-student_per_class = 20
-is_student_ready: False
+# String
+welcome = "Hello, World"
+print(welcome)
 
-while student_count > 0:
-        print('hello ', student_count)
-        student_count -= 1
-print( range(3))    
-wat = input( 'num ??')
+# Boolean
+is_awesome = True
+print(is_awesome)
 
-print( '')
+# Integer
+the_meaning_of_life_and_the_universe_and_everything = 42
+print(the_meaning_of_life_and_the_universe_and_everything)
+
+# Floating point number
+pi = 3.141592
+print(pi)
+
+# Assigning and creating a variable, (define its value)
+number = 12
+
+# Mutate a variable, (redefine its value)
+number = 23
