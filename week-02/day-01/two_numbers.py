@@ -12,3 +12,10 @@
 
 # Print the reminder of 22 divided by 13
 
+
+print(22 + 13)
+print(13 - 22)
+print(22 * 13)
+print(float(22 / 13))[:2]
+print(22 // 13)
+print(22 % 13)

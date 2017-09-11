@@ -6,4 +6,6 @@
 #         print('hello ', student_count)
 #         student_count -= 1
 # print( range(3))    
-print( int(1.9))
+wat = input( 'num ??')
+
+print( '')
