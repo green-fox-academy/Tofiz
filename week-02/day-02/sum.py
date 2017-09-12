@@ -1,22 +1,15 @@
 # - Write a function called `sum` that sum all the numbers
 #   until the given parameter
 
-# def sum(user_input):
-#     for i = range
-#     return user_input
-
-# print(range())
-
-
-# n = int(input())
+n = int(input("Give me a number: "))
 
 def sum(num):
     x = 0
-    for i in range(1, num):
+    for i in range(1, num+1):
         x += i 
     return x
         # print(sum(x))
         
-number = sum(9)
+number = sum(n)
 
 print(number)
