@@ -26,6 +26,7 @@ def transfer (from_acc, to_acc, amount):
 def change_balance (account_number, amount):
     accounts[get_index_by_id(account_number)]["balance"] += amount
 
+
 def get_index_by_id(account_number):
     for account in accounts:
         if account["account_number"] == account_number: 
