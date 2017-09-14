@@ -19,15 +19,28 @@ queue = [
 # no. of guns
 
 # Create a security_check function that returns a list of festivalgoers who can enter the festival
-def security_check (in_queue):
-    for empty_festivalgoers in in_queue:
+def security_check (queue):
+    for empty_festivalgoers in queue:
         if empty_festivalgoers['alcohol'] == 0 and empty_festivalgoers['guns'] == 0:
         	they_can_enter.append(empty_festivalgoers['name'])
 security_check(queue)
-print("They can enter: " , they_can_enter)
+
+
+
+enter = []
+
+def printer(they_can_enter):
+	returner = ""
+	for people in they_can_enter:
+		returner += people + ", "
+	print("They can enter: ", returner)
+
+printer(they_can_enter)
 
 
 
 
+
+# print("They can enter: " , they_can_enter)
 # If guns are found, remove them and put them on the watchlist (only the names)
 # If alcohol is found confiscate it (set it to zero and add it to security_alcohol_loot) and let them enter the festival
