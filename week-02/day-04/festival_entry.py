@@ -2,6 +2,8 @@ watchlist = []
 
 security_alcohol_loot = 0
 
+they_can_enter = []
+
 queue = [
 	{ 'name': 'Amanda', 'alcohol': 10, 'guns': 1 },
 	{ 'name': 'Tibi', 'alcohol': 0, 'guns': 0 },
@@ -15,7 +17,7 @@ queue = [
 # Queue of festivalgoers at entry
 # no. of alcohol units 
 # no. of guns
-they_can_enter = []
+
 # Create a security_check function that returns a list of festivalgoers who can enter the festival
 def security_check (in_queue):
     for empty_festivalgoers in in_queue:
@@ -24,12 +26,7 @@ def security_check (in_queue):
 security_check(queue)
 print("They can enter: " , they_can_enter)
 
-# security_alcohol_loot.insert += 'alcohol'
-# they_can_enter.append((security_check(queue))
 
-
-
-# print(they_can_enter)
 
 
 # If guns are found, remove them and put them on the watchlist (only the names)
