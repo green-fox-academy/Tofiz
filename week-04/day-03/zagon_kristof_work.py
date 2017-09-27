@@ -2,7 +2,8 @@ class Apple(object):
     def get_apple(self):
         return "apple"
 
-class sum_of_the_elements(object):
-    list_of_integers = []
-    def sum(list_of_integers):
-        pass
+class Sum_of_the_Elements():
+    def sum_of_numbers(self, numlist):
+        if numlist == None:
+            return None
+        return sum(numlist)
