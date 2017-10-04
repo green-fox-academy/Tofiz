@@ -8,9 +8,9 @@ number = input( "Gimme a number: ")
 
 if int(number) <= 0:
     print("Not enough")
-if int(number)==1:
+elif int(number)==1:
     print("One")
-if int(number)==2:
+elif int(number)==2:
     print("Two")
-if int(number)>2:
+elif int(number)>2:
     print("A lot")

@@ -19,7 +19,7 @@ s = surface(length, width, heigh)
 
 def volume(l, w, h):
     v = s * h
-    print("The Surface Area is " , v , "cm^2 of the cuboid.") 
+    print("The Volume is " , v , "cm^2 of the cuboid.") 
     return v
 v = volume(length, width, heigh)
 print()

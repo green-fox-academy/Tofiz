@@ -11,7 +11,7 @@
 
 a = int(input('Give me a number: '))
 star = '+'
-empty = ' '
+empty = '/'
 for i in range(1, a*2, 2):
     y = (a * 2 - i) // 2
     print( y * empty + i * star)

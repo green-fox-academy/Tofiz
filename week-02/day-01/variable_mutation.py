@@ -35,7 +35,7 @@ print(d)
 
 
 e = 8
-# please cube of e's value
+# please cube of e's value (exposed)
 e **= 3
 
 print(e)
@@ -60,7 +60,7 @@ g2 = 300
 # tell if the double of g2 is bigger than g1 (pras a boolean)
 
 
-if g1*g1 < g2*g2:
+if g1 < g2*g2:
     print("bigger")
 else:
     print("not bigger")
