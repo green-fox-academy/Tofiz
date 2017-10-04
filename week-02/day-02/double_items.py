@@ -11,13 +11,3 @@ for n in range(0,len(ag)):
     
 print (one_line)
 
-    
-
-# def double(lst):
-#     x = 0
-#     for i in ag:
-#         x *= 2
-#     print x
-#     return lst
-
-# print double(ag)

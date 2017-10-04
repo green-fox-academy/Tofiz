@@ -9,5 +9,6 @@ aj = [3, 4, 5, 6, 7]
 
 for n in reversed(aj):
     one_line = one_line + str(n) + ", "
-print (one_line)
+print(one_line)
 
+print revers(aj)

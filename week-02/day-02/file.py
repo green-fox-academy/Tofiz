@@ -8,11 +8,4 @@
 #   `"orchid", "violet", "pink", "hot pink"`
 
 colors = [["lime", "forest green", "olive", "pale green", "spring green"], 
-["orange red", "red", "tomato"], 
-["orchid", "violet", "pink", "hot pink"]]
-
-
-for i in range(len(colors)):
-    for j in range(len(colors[i])):
-        print(colors[i][j], end=', ')
-    print()
+["orange red", "red", "tomato"], ["orchid", "violet", "pink", "hot pink"]]

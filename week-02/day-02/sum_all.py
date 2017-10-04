@@ -9,5 +9,5 @@ for n in range(0,len(ai)):
     x += ai[n]
 print(x)
 
-
+# An other solutions is:
 print (sum(ai))

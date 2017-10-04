@@ -5,7 +5,7 @@
 nimals = ["kuty", "macsk", "cic"]
 
 
-for i in range(3):
+for i in range(len(nimals)):
     print(nimals[i] + "a")
 
 
