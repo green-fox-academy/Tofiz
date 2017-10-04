@@ -11,7 +11,7 @@ students = [
 def who_has_got_more_candies():
         for i in range(len(students)):
                 if (students[i]['candies']) > 4:
-                    print(students[i])
+                    print(students[i]['name'], "has more than 4.")
 who_has_got_more_candies()
 
 # who_has_got_more_candies()
@@ -23,5 +23,5 @@ def students_candies():
     avg=0
     for i in range(len(students)):
         avg += students[i]['candies']/len(students)
-    print(avg)       
+    print(avg, "candies they have avg.")       
 students_candies()

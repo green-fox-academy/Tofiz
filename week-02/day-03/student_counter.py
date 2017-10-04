@@ -22,3 +22,11 @@ def list_of_students():
         sumcandy += (students[i]['candies'])
     print(sumcandy)
 list_of_students()
+
+def sum_of_the_ages():
+    ages = 0
+    for i in range(len(students)):
+        if students[i]['candies'] < 5:
+            ages += students[i]['age']
+    print(ages)
+sum_of_the_ages()   

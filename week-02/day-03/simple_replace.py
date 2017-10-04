@@ -5,6 +5,6 @@ example = "In a dishwasher far far away";
 # Expected ouput: In a galaxy far far away
 
 
-example = example[:4] + " galaxy " + example[16:]
+example1 = example[:4] + " galaxy " + example[16:]
 
-print(example)
+print(example1)

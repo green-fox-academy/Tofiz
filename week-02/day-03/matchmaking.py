@@ -29,5 +29,6 @@ print(one_line)
 
 # easy solution
 order = girls[0] + boys[0] + girls[1] + boys[1] + girls[2] + boys[2] + girls[3] + boys[3] + girls[4] + boys[4]
+print(order)
 
 
