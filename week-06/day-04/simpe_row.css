@@ -1,0 +1,42 @@
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    border: 15px solid #B02AFF;    
+    grid-gap: 10px;
+    background-color: #B02AFF;
+    grid-template-areas: "left center right";
+    align-content: center;
+}
+
+
+body{
+    margin: 0;
+}
+
+div {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-family: Cambria;
+    line-height: 150px
+}
+
+
+.left {
+    background-color: #FFD62A;
+    grid-area: left;
+    height: 150px;
+}
+
+.center {
+    background-color: #51D400;
+    grid-area: center;
+    height: 150px;
+}
+
+.right {
+    background-color: #FFD62A;
+    grid-area: right;
+    height: 150px;
+}
