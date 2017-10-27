@@ -1,32 +1,32 @@
 body {
     background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#cccccc 51%,#f6f6f6 100%);;
-    /* background: white; */
+    padding: 50px;
+    margin: 0px;
 }
 
 .container {
     display: flex;
     margin: auto;
-    width: 700px;
+    width: 900px;
     height: 500px;
     justify-content: space-between;
 }
 
 .left {
     background-color: gray;
-    width: 100px;
+    width: 50px;
 }
 
 .main {
     display: flex;
     background-color: gray;
-    width: 500px;
-    justify-content: flex-end;
-}
+    width: 800px;
 
-.black {
-    background-color: gray;
-    width: 60px;
-    height: 60px;
+}
+.photoholder {
+    background-color: purple;
+    /* width: 60px;
+    height: 60px; */
     margin: 7px;
     align-self: flex-end;
     
@@ -34,8 +34,7 @@ body {
 
 .right {
     background-color: gray;
-    width: 100px;
-    justify-content: flex-end;
+    width: 50px;
     
 }
 
@@ -44,20 +43,25 @@ body {
     margin: auto;
     width: 540px;
     height: 100px;
-    background-color: gray;
-    justify-content: flex-end;
     align-items: center;
 }
-
 .box {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    width: 700px;
+    /* height: ; */
+    /* display: flex; */
+    margin: auto;
+    /* width: 700px; */
+    /* justify-content: space-between; */
+    
+    
 }
-
 .square {
+    flex-direction: row;
     height: 80px;
     width: 80px;
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
     flex-basis: 80px;
     margin: 5px;
     background-color: black;
