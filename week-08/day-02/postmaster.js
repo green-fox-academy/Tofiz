@@ -11,9 +11,9 @@
 function postMaster(poBox, dispatchFunction) {
     var poboxVariable = poBox;
     return function(targetBox, message){
-    if (poboxVariable === targetBox){
-        dispatchFunction(message);
-        console.log(targetBox);
+        if (poboxVariable === targetBox){
+            dispatchFunction(message);
+            console.log(targetBox);
         }
     }
 }
