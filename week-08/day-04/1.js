@@ -16,19 +16,17 @@ function displayData(data) {
     data.forEach(function(gif) {
         let img = document.createElement("img")
         let url = gif.images.downsized_still.url
-        let urlBig = gif.images.fixed_width.url
         img.src = url
         small.appendChild(img)
-        imageEventListener(img)
+        imageEventListener(img, gif)
     })
 }
 
-function imageEventListener(img) {
+function imageEventListener(img, gif) {
     img.addEventListener('click', function() {
-        
+        img.src = gif.images.original.url        
     })
 }
 
-let big = document.querySelector(".big")
 let small = document.querySelector(".small")
 getGif(displayData)
