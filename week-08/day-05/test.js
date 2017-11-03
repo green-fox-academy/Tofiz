@@ -1,4 +1,3 @@
-
 function doRequest(callback) {
     var x = new XMLHttpRequest();
     x.open('GET', 'https://cors-anywhere.herokuapp.com/http://secure-reddit.herokuapp.com/posts');
