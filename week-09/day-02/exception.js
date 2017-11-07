@@ -11,6 +11,7 @@ let  addString = function(str1, str2, printStr){
     throw new Error('"str2" is not a string');
   }
   let newStr = str1 + str2;
+  console.log(newStr);
 };
 
 
@@ -19,7 +20,7 @@ let printStr = function(str) {
 };
 
 try {
-addString(1234, 56789, 'printStr');
+addString("alma", "korte", 'printStr');
 } catch (err) {
   console.log(err.message)
 };
