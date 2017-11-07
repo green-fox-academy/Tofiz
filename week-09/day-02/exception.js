@@ -6,22 +6,20 @@
 
 let  addString = function(str1, str2, printStr){
   if (typeof str1 !== 'string'){
-    throw new Error('"a" is not a string')
+    throw new Error('"str1" is not a string');
   } else if (typeof str2 !== 'string'){
-    throw new Error('"b" is not a string');
+    throw new Error('"str2" is not a string');
   }
-  // console.log(str1 + str2);
   let newStr = str1 + str2;
-  }
-  // printStr(newStr);
+};
 
 
 let printStr = function(str) {
   console.log(str);
-}
+};
 
 try {
 addString(1234, 56789, 'printStr');
 } catch (err) {
   console.log(err.message)
-}
+};
