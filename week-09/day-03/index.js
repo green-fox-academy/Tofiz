@@ -3,6 +3,8 @@ var app = express();
 
 express.json.type = "application/json"
 
+app.use(express.json())
+
 app.use('/assets', express.static('./assets'));
 
 
@@ -48,11 +50,26 @@ app.get('/appenda/:anything', function(req, res){
     res.send({
         "appended": req.params.anything + 'a'
     })
-}
+});
 
-
-);
-
+app.post('/dountil/:what', function(req, res){
+    if (req.params.what == "sum") {
+       let sum = 0
+       for ( let i = 0; i <= req.body.until; i++) {
+           sum += i
+        }
+        res.send({ "result": sum})
+        
+    } else if (req.params.what == "factor") {
+        let sum = 1
+    for ( let i = 1; i <= req.body.until; i++) {
+        sum = sum * i
+    }
+    res.send({ "result": sum})
+    } else {
+       res.send({"error": "Please provide a number!"}) 
+    } 
+});
 
 
 app.listen(8080);
