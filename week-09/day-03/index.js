@@ -29,22 +29,19 @@ app.get('/doubling', function(req, res){
 app.get('/greeter', function(req, res){
     let nameQuery = req.query.name;
     let titleQuery = req.query.title;
-    if (nameQuery == null && titleQuery == null) {
+    if (nameQuery == null) {
         res.send({
             "error": "Please provide a name!"
-          })
-    } else if {
+        })
+    } else if (titleQuery == null) {
         res.send({
-            "error": "Please provide a name!"
-          })
-
+            "error": "Please provide a title!"
+        })
     } else {
         res.send({
             "welcome_message": "Oh, hi there " + nameQuery + ", my dear " + titleQuery + "!"
-          })
+        })
     }
-
-
 });
 
 app.listen(8080);
