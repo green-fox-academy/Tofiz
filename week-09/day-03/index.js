@@ -9,7 +9,6 @@ app.use('/assets', express.static('./assets'));
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/index.html');
 });
-  
 
 
 app.get('/doubling', function(req, res){
@@ -24,9 +23,28 @@ app.get('/doubling', function(req, res){
         })
 
     }
+});
+    
 
+app.get('/greeter', function(req, res){
+    let nameQuery = req.query.name;
+    let titleQuery = req.query.title;
+    if (nameQuery == null && titleQuery == null) {
+        res.send({
+            "error": "Please provide a name!"
+          })
+    } else if {
+        res.send({
+            "error": "Please provide a name!"
+          })
+
+    } else {
+        res.send({
+            "welcome_message": "Oh, hi there " + nameQuery + ", my dear " + titleQuery + "!"
+          })
+    }
 
 
 });
 
-    app.listen(8080);
+app.listen(8080);
