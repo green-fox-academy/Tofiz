@@ -23,13 +23,23 @@ conn.connect(function(err){
   console.log("Connection established"); }
 });
 
-app.get('/', function(req, res){
-    conn.query("SELECT * FROM author;",function(err,rows){
-        console.log("Data received from Db:\n");
-        console.log(rows);
+app.get('/', function(req,res){
+  res.sendFile(__dirname + '/index.html');
+});
+
+app.get('/list', function(req, res){
+  conn.query('SELECT book_name FROM book_mast;', function(err, rows){
+      if(err) {
+          console.log(err.toString());
+      }
+      console.log("Data received from Db:\n");
+      let htmlString = '<ol>';
+      rows.forEach(function(row) {
+          htmlString = htmlString + '<li>' + row.book_name + '</li>';
       });
-    //   res.sendFile(__dirname + '/index.html');  
-})
+      htmlString = htmlString + '</ol>';
+      res.send(htmlString)
+  });
+});
 
 app.listen(8080)
-// + MySQL lekeres, + send html a lekeres eredmenyeivel table formatumban
