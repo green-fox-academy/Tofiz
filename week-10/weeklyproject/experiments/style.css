@@ -26,14 +26,21 @@
     margin: 0.4rem 0rem 0rem 0.4rem;
 }
 
-.currently_played {
+.currentlyplaying {
     background-color: #F6F5F4;
     grid-area: currently_played;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     border-radius: 0rem 0.4rem 0rem 0rem;
-    
+    position: relative;
+}
+
+.title {
+    font-weight: bold;
+    position: absolute;
+    font-size: 20px;
+    left: 10px;
 }
 
 .artwork {
@@ -86,6 +93,7 @@
     height: 1.2rem;
     width: 1.2rem;
     padding: 0.5rem;
+
 }
 
 .controlpanel img {
