@@ -1,0 +1,112 @@
+.container {
+    font-family: "Barlow", "sans-serif";
+    color: #525554;
+    margin: 0 auto;
+    background-color: #F6F5F4;
+    width: 50rem;
+    height: 27rem;
+    border-radius: 0.4rem;
+    display: grid;
+    grid-template-columns: 16rem 9rem 25rem;
+    grid-template-rows: 3rem 3rem 3rem 15rem 3rem;
+    grid-template-areas: "logonotification artwork currently_played"
+                        "logonotification artwork tracks"
+                        "playlist playlist tracks"
+                        "playlist playlist tracks"
+                        "controlpanel controlpanel controlpanel";
+    box-shadow: 3px 3px 3px #DEDCD8;
+}
+
+.logonotification {
+    padding-left: 0.6rem;
+    padding-top: 0.6rem;
+    background-color: #F6F5F4;
+    grid-area: logonotification;
+    border-radius: 0.4rem 0rem 0rem 0rem;
+    margin: 0.4rem 0rem 0rem 0.4rem;
+}
+
+.currentlyplaying {
+    background-color: #F6F5F4;
+    grid-area: currently_played;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 0rem 0.4rem 0rem 0rem;
+    position: relative;
+}
+
+.title {
+    font-weight: bold;
+    position: absolute;
+    font-size: 20px;
+    left: 10px;
+}
+
+.artwork {
+    background-color: salmon;
+    grid-area: artwork;
+    z-index: 1;
+    height: 9rem;
+    background-image: url(../assets/music-placeholder.png);
+    background-size: contain;
+}
+
+.playlist {
+    background-color: #EBEAE8;
+    grid-area: playlist;
+    padding: 1rem;
+    background: linear-gradient(to bottom, #F6F5F4, #F6F5F4 50%, #EBEAE8 50%, #EBEAE8);
+    background-size: 100% 5rem;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+
+    
+}
+
+.playlist span {
+    font-weight: bold;
+    position: absolute;
+    font-size: 40px;
+    left: 220px;
+    top: 1px;
+}
+
+.tracks {
+    background-color: #BCB2A6;
+    grid-area: tracks;
+    background: linear-gradient(to bottom, #F6F5F4, #F6F5F4 50%, #EBEAE8 50%, #EBEAE8);
+    background-size: 100% 5rem;
+}
+
+.controlpanel {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    grid-area: controlpanel;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currentlyplaying img {
+    height: 1.2rem;
+    width: 1.2rem;
+    padding: 0.5rem;
+
+}
+
+.controlpanel img {
+    height: 1.2rem;
+    width: 1.2rem;
+    padding: 0.5rem;
+}
+
+.container h3 {
+    margin: 0;
+    padding-top: 2rem;
+}
+
+.track_length {
+    width: 20rem;
+}
